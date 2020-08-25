@@ -24,8 +24,8 @@
         <q-item-label header class="text-grey-8">
           Essential Links
         </q-item-label>
-        <q-item>
-          Telegram
+        <q-item >
+         <q-btn size="md" color="blue" @click="redirect" class="fab fa-linkedin" flat ></q-btn>
         </q-item>
         <q-item>
           Github
@@ -45,6 +45,13 @@ export default {
   name: 'MainLayout',
   data: () => ({
     leftDrawerOpen: false
-  })
+  }),
+  methods: {
+    redirect () {
+      window.open(
+        'https://telegram.com/rchf'
+      )
+    }
+  }
 }
 </script>
